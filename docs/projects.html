@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Jhazmine Carbonilla</title>
+  <link rel="stylesheet" href="../docs/CSS/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="title">My Portfolio</div>
+    <nav class="navigation" aria-label="Main Navigation">
+      <button onclick="navigateTo('index.html')">Home</button>
+      <button onclick="navigateTo('about.html')" aria-current="page">About</button>
+      <button onclick="navigateTo('projects.html')">Projects</button>
+      <button onclick="navigateTo('contact.html')">Contact</button>      
+    </nav>
+  </header>
+
+  <main class="projects">
+    <h1>My Projects</h1>
+    <section class="project-list">
+      <div class="project-item">
+        <h2>Project 1: Personal Portfolio Website</h2>
+        <p>This website showcases my skills, projects, and experiences as a web developer. Built using HTML, CSS, and JavaScript.</p>
+      </div><br>
+      <div class="project-item">
+        <h2>Project 2: E-Commerce Mockup</h2>
+        <p>An e-commerce platform prototype with features like a product gallery, cart functionality, and checkout system.</p>
+      </div><br>
+      <div class="project-item">
+        <h2>Project 3: Blog Platform</h2>
+        <p>A blogging platform where users can post, edit, and comment on articles, with a responsive and modern design.</p>
+      </div><br>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2024 Jhazmine M. Carbonilla ~ BSIT - 3E ~ All rights reserved</p>
+  </footer>
+
+  <script>
+    function navigateTo(page) {
+      window.location.href = page;
+    }
+  </script>
+</body>
+</html>

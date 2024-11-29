@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carbonilla, Jhazmine M.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        h3{
+            color: #333;
+            text-align: left;
+        }
+        input[type="number"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            text-align: center;
+        }
+
+        button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ACTIVITY</h1>
+    <h3>Carbonilla, Jhazmine M.</h3>
+    <h3>BSIT - 3E</h3>
+    <br>
+
+    <h2>Square and Cube Calculator</h2>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <button onclick="calculateSquareAndCube()">Calculate</button>
+    <p id="squareResult"></p>
+    <p id="cubeResult"></p>
+<br>
+    <h2>Average Calculator</h2>
+    <input type="number" id="num1" placeholder="Enter number 1">
+    <input type="number" id="num2" placeholder="Enter number 2">
+    <input type="number" id="num3" placeholder="Enter number 3">
+    <input type="number" id="num4" placeholder="Enter number 4">
+    <input type="number" id="num5" placeholder="Enter number 5">
+    <button onclick="calculateAverage()">Calculate Average</button>
+    <p id="averageResult"></p>
+
+    <script>
+        function calculateSquareAndCube() {
+            const inputValue = document.getElementById('numberInput').value;
+            const number = parseFloat(inputValue);
+
+            const square = number * number;
+            const cube = number * number * number;
+
+            document.getElementById('squareResult').textContent = `Square: ${square}`;
+            document.getElementById('cubeResult').textContent = `Cube: ${cube}`;
+        }
+
+        function calculateAverage() {
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+            const num3 = parseFloat(document.getElementById("num3").value);
+            const num4 = parseFloat(document.getElementById("num4").value);
+            const num5 = parseFloat(document.getElementById("num5").value);
+
+            const average = (num1 + num2 + num3 + num4 + num5) / 5;
+
+            document.getElementById("averageResult").textContent = `The average is: ${average}`;
+        }
+    </script>
+</body>
+</html>

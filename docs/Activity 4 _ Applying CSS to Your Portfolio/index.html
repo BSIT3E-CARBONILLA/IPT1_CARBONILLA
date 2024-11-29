@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jhazmine M. Carbonilla Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="title">Jhazmine M. Carbonilla Portfolio</div>
+    <nav class="navigation" aria-label="Main Navigation">
+      <button onclick="navigateTo('index.html')">Home</button>
+      <button onclick="navigateTo('about.html')">About</button>
+      <button onclick="navigateTo('projects.html')">Projects</button>
+      <button onclick="navigateTo('contact.html')">Contact</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="image-container">
+        <img src="Images/logo.png" alt="Profile Logo">
+      </div>
+      <div class="intro-text">
+        <h1>✮⋆˙ Jhazmine Mediavillo Carbonilla ✮⋆˙</h1>
+        <p>
+          Jhazmine Carbonilla is a 20-year-old third-year Bachelor of Science in Information Technology (BSIT)
+          student at City of Malabon University. Born on December 21, 2003, she currently resides in Malabon City.
+        </p>
+      </div>
+      <div class="right-section">
+        <img src="Images/Image2.jpg" alt="Main Project Image">
+      </div>
+    </section>
+
+    <div class="gallery-text">
+      <h1>Gallery</h1>
+    </div>
+
+    <section class="gallery" aria-label="Gallery Section">
+      <div class="gallery-item" onclick="showText('text1')">
+        <img src="Images/Image4.jpg" alt="Image 2">
+        <p id="text1" class="hidden">₊˚⊹♡₊</p>
+      </div>
+      <div class="gallery-item" onclick="showText('text2')">
+        <img src="Images/Image3.jpg" alt="Image 3">
+        <p id="text2" class="hidden">𓈒⟡₊⋆∘</p>
+      </div>
+      <div class="gallery-item" onclick="showText('text3')">
+        <img src="Images/Image1.jpg" alt="Image 4">
+        <p id="text3" class="hidden">⋆ ˚｡⋆୨♡୧⋆ ˚｡⋆</p>
+      </div>
+      <div class="gallery-item" onclick="showText('text4')">
+        <img src="Images/Image5.jpg" alt="Image 5">
+        <p id="text4" class="hidden">⋆𐙚₊˚⊹♡</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2024 Jhazmine M. Carbonilla. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
